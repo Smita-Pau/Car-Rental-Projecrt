@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking Details</title>
+    <link rel="stylesheet" href="scorpio 2booking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="car-details">
+            <h1>Car Booking Details</h1>
+            <div class="car-info">
+                <img src="pic/car 7.jpeg" alt="Car Image">
+                <div>
+                    <h2>Car Model: 2024 Mahindra Scorpio-N</h2>
+                    <p>Color: Black</p>
+                    <p>Year: 2024</p>
+                    <p>Price per Day: 6000.00</p>
+                </div>
+            </div>
+            <div class="booking-summary">
+                <h2>Booking Summary</h2>
+                <div class="inout-box"><span>Pick-up Date :</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="inout-box">
+                    <span>Return Date :</span>
+                    <input type="date" name="" id="">
+                </div>
+                <p>Total Days: <span id="total-days">0</span></p>
+                <p>Total Price: Rs.<span id="total-price">0</span></p>
+            </div>
+        </div>
+        <div class="user-details">
+            <h2>Enter Your Details</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+                
+                <button type="submit">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

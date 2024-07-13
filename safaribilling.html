@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Billing Details</title>
+    <link rel="stylesheet" href="safaribilling.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Billing Details</h1>
+        <form action="submit_billing.php" method="post">
+            <div class="billing-info">
+                <h2>Billing Information</h2>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" required>
+                </div>
+                <div class="form-group">
+                    <label for="billing-address">Billing Address:</label>
+                    <textarea id="billing-address" name="billing-address" rows="4" required></textarea>
+                </div>
+            </div>
+            <div class="booking-summary">
+                <h2>Booking Summary</h2>
+                <p>Car Model: 2023 TATA Safari</p>
+                <p>Rental Period: 5 days</p>
+                <p>Total Amount: 00</p>
+            </div>
+            <button type="submit"><a href="safaribilling.html" class="btn">Confirm Payment</a></button>
+        </form>
+    </div>
+</body>
+</html>
